@@ -1,17 +1,18 @@
 <div class="row">
   <div class="col-sm-12">
     <button class="btn btn-success">New Recipe</button>
+    <hr>
   </div>
 </div>
 <div class="row">
-  <div class="col-sm-12">
-    <a href="#" class="list-group-item clearfix">
+  <div class="col-sm-12 list-group">
+    <a href="#" class="list-group-item clearfix" *ngFor="let element of recipes">
       <div class="float-left">
-        <h4 class="">{{recipes[0].name}}</h4>
-        <p class="">{{recipes[0].description}}</p>
+        <h4>{{element.name}}</h4>
+        <p>{{element.description}}</p>
       </div>
       <span class="float-right">
-        <img src="{{recipes[0].imagePath}}" class="img-fluid" alt="" style="max-height: 50px">
+        <img [src]="element.imagePath" class="img-fluid" alt="{{element.name}}" style="max-height: 100px">
       </span>
     </a>
     <app-recipe-item></app-recipe-item>
