@@ -5,6 +5,11 @@ import {RecipesComponent} from '../recipes/recipes.component';
 import {ShoppingListComponent} from '../shopping-list/shopping-list.component';
 
 const routes: Routes = [{
+    path: '',
+    redirectTo: '/recipes',
+    pathMatch: 'full'
+},
+  {
   component: RecipesComponent,
   path: 'recipes'
 }, {
