@@ -11,7 +11,8 @@
     <div class="list-group">
       <app-recipe-item class="list-group-item bg-custom p-2 border-dark"
                        *ngFor="let element of recipes"
-                       [recipe]="element">
+                       [recipe]="element"
+                       (recipeSelected)="onRecipeSelected(element)">
       </app-recipe-item>
     </div>
   </div>
