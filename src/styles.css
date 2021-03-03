@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Gabriola;
+  src: local("Gabriola"), url("src/assets/fonts/gabriola.ttf");
+}
+
 body {
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
@@ -8,6 +13,8 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  font-family: Gabriola, sans-serif;
+  font-size: 2vw;
 }
 
 a,
