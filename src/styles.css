@@ -15,3 +15,7 @@ a:focus,
 a:hover {
   color: #fff;
 }
+
+.bg-custom {
+  background-color: #333;
+}
