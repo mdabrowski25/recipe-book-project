@@ -1,9 +1,8 @@
 import {Injectable, EventEmitter} from '@angular/core';
 import {Recipe} from '../shared/models/recipe.model';
-import {RecipesModule} from './recipes.module';
 
 @Injectable({
-  providedIn: RecipesModule
+  providedIn: 'root'
 })
 export class RecipesService {
   constructor() {
