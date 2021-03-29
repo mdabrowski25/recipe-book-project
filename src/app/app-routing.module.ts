@@ -1,15 +1,18 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
-import {RecipesComponent} from '../../../recipes/recipes.component';
-import {ShoppingListComponent} from '../../../shopping-list/shopping-list.component';
-import {PathNotFoundComponent} from '../../../path-not-found/path-not-found.component';
+import {RecipesComponent} from './recipes/recipes.component';
+import {ShoppingListComponent} from './shopping-list/shopping-list.component';
+import {PathNotFoundComponent} from './path-not-found/path-not-found.component';
 
-const routes: Routes = [{
-  path: '',
-  redirectTo: '/recipes',
-  pathMatch: 'full'
-},
+
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/recipes',
+    pathMatch: 'full'
+  },
   {
     component: RecipesComponent,
     path: 'recipes'
