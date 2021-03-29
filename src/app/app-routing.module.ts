@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {RecipesComponent} from './recipes/recipes.component';
 import {ShoppingListComponent} from './shopping-list/shopping-list.component';
-import {PathNotFoundComponent} from './path-not-found/path-not-found.component';
-
+import {ErrorPageComponent} from './error-page/error-page.component';
 
 
 const routes: Routes = [
@@ -20,8 +19,11 @@ const routes: Routes = [
     component: ShoppingListComponent,
     path: 'shopping-list'
   }, {
-    component: PathNotFoundComponent,
-    path: 'path-not-found'
+    component: ErrorPageComponent,
+    path: 'error',
+    data: {
+      message: 'Page not found!'
+    }
   }, {
     path: '**',
     redirectTo: 'path-not-found'

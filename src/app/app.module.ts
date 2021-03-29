@@ -10,8 +10,8 @@ import {RecipeDetailComponent} from './recipes/recipe-detail/recipe-detail.compo
 import {RecipeItemComponent} from './recipes/recipe-list/recipe-item/recipe-item.component';
 import {ShoppingListComponent} from './shopping-list/shopping-list.component';
 import {ShoppingEditComponent} from './shopping-list/shopping-edit/shopping-edit.component';
-import { PathNotFoundComponent } from './path-not-found/path-not-found.component';
 import {RoutingModule} from './app-routing.module';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import {RoutingModule} from './app-routing.module';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    PathNotFoundComponent
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
