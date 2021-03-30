@@ -1,15 +1,13 @@
-<div class="row">
+<div class="row pb-4">
   <div class="col-12">
     <button class="btn btn-success w-100 bg-dark">New Recipe</button>
   </div>
 </div>
 
-<hr>
-
 <div class="row">
   <div class="col-12">
     <div class="list-group">
-      <app-recipe-item class="list-group-item bg-custom p-2 border-dark" style="cursor: pointer"
+      <app-recipe-item class="list-group-item bg-custom p-2 border-dark recipe-item-hover" style="cursor: pointer"
                        *ngFor="let element of recipes"
                        [recipe]="element">
       </app-recipe-item>
