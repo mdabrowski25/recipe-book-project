@@ -1,3 +1,15 @@
 .nav-item-font {
   font-size: 0.7em;
 }
+
+.active {
+  border-bottom: 1px solid #dee2e6 !important
+}
+
+ul.fill li a {
+  transition: 1s;
+}
+
+ul.fill li a:hover {
+  color: #00b7ff !important;
+}
