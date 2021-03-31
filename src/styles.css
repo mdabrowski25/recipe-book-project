@@ -1,28 +1,28 @@
 @font-face {
-  font-family: Gabriola;
-  src: local("Gabriola"), url("src/assets/fonts/gabriola.ttf");
+    font-family: Gabriola;
+    src: local("Gabriola"), url("src/assets/fonts/gabriola.ttf");
 }
 
 body {
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    color: #fff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
 html,
 body {
-  height: 40em;
-  background-color: #333;
-  font-family: Gabriola, sans-serif;
-  font-size: 150%;
+    height: 40em;
+    background-color: #333;
+    font-family: Gabriola, sans-serif;
+    font-size: 150%;
 }
 
 a,
 a:focus,
 a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 .bg-custom {
-  background-color: #333;
+    background-color: #333;
 }
