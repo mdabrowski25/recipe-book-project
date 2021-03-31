@@ -13,6 +13,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { RoutingModule } from './app-routing.module';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { NoRecipeComponent } from './recipes/no-recipe/no-recipe.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NoRecipeComponent } from './recipes/no-recipe/no-recipe.component';
         ShoppingListComponent,
         ShoppingEditComponent,
         ErrorPageComponent,
-        NoRecipeComponent
+        NoRecipeComponent,
+        RecipeEditComponent
     ],
     imports: [
         BrowserModule,
