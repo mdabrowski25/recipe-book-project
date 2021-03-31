@@ -12,7 +12,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RoutingModule } from './app-routing.module';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { NoRecipeComponent } from './no-recipe/no-recipe.component';
+import { NoRecipeComponent } from './recipes/no-recipe/no-recipe.component';
 
 
 @NgModule({

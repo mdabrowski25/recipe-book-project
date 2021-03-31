@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { NoRecipeComponent } from './no-recipe/no-recipe.component';
+import { NoRecipeComponent } from './recipes/no-recipe/no-recipe.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 
 
@@ -19,12 +19,12 @@ const routes: Routes = [
         path: 'recipes',
         children: [
             {
-                component: NoRecipeComponent,
-                path: ''
-            },
-            {
                 component: RecipeDetailComponent,
                 path: ':id'
+            },
+            {
+                component: NoRecipeComponent,
+                path: ''
             }
         ]
     }, {

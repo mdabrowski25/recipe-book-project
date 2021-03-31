@@ -1,9 +1,11 @@
-<a (click)="onSelected()" class="stretched-link">
-    <div class="float-left">
-        <h4>{{recipe.name}}</h4>
-        <p>{{recipe.description}}</p>
+<a class="list-group-item bg-dark clearfix">
+    <div class="row">
+        <div class="col-9">
+            <h4>{{recipe.name}}</h4>
+            <p>{{recipe.description}}</p>
+        </div>
+        <div class="col-3">
+            <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-fluid" style="max-height: 100px">
+        </div>
     </div>
-    <span class="float-right">
-        <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-fluid" style="max-height: 100px">
-  </span>
 </a>
