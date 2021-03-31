@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class RecipeDetailComponent implements OnInit {
     recipe: Recipe;
-
+    id: number;
     constructor(private recipesService: RecipesService,
                 private activatedRoute: ActivatedRoute,
                 private router: Router) {
@@ -18,7 +18,8 @@ export class RecipeDetailComponent implements OnInit {
 
     ngOnInit(): void {
         this.activatedRoute.paramMap.subscribe(paramMap => {
-            this.recipe = this.recipesService.getRecipe(+paramMap.get('id'));
+            this.id = +paramMap.get('id');
+            this.recipe = this.recipesService.getRecipe(this.id);
             if (this.recipe === undefined) {
                 this.router.navigate(['/error']).then(() => alert('No recipe found'));
             }
