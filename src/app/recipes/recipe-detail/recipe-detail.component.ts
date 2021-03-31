@@ -18,7 +18,7 @@ export class RecipeDetailComponent implements OnInit {
 
     ngOnInit(): void {
         this.activatedRoute.paramMap.subscribe(paramMap => {
-            this.recipe = this.recipesService.getRecipe(+paramMap.get('id') - 1);
+            this.recipe = this.recipesService.getRecipe(+paramMap.get('id'));
             if (this.recipe === undefined) {
                 this.router.navigate(['/error']).then(() => alert('No recipe found'));
             }

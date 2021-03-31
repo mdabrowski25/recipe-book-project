@@ -7,8 +7,9 @@
 <div class="row">
     <div class="col-12">
         <div class="list-group">
-            <app-recipe-item *ngFor="let element of recipes" [recipe]="element"
-                             class="recipe-item-hover"
+            <app-recipe-item *ngFor="let element of recipes; let i = index"
+                             [recipe]="element"
+                             [index]="i"
                              style="cursor: pointer">
             </app-recipe-item>
         </div>
